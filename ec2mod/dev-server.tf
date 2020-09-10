@@ -1,11 +1,11 @@
 resource "aws_instance" "development" {
-  count         = var.servercount
+  count         = length(var.servername)
   ami           = var.serverimage
   instance_type = var.servertype 
   key_name      = var.keypair
 
   tags = {
-    Name = var.servername
+    Name = var.servername[count.index]
   }
 }
 
