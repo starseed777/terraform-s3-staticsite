@@ -5,7 +5,7 @@ resource "aws_instance" "development" {
   key_name      = var.keypair
 
   tags = {
-    Name = "internal-blog-dev"
+    Name = var.servername
   }
 }
 
