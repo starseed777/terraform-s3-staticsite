@@ -6,8 +6,8 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = var.backupbucket
-    key            = var.path
+    bucket         = "backupjawnts"
+    key            = "terraform/state.tfstate"
     region         = "us-east-1"
     dynamodb_table = "maininfra-lock"
   }
