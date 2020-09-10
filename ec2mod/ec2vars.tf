@@ -1,5 +1,5 @@
 variable servercount {
-  type    = number
+  type    = number 
   default = 2
 }
 
@@ -19,6 +19,6 @@ variable keypair {
 }
 
 variable servername {
-  type    = string
-  default = "internal-blog-dev"
+  type    = list(string) 
+  default = ["internal-blog-dev", "internal-blog-dev2"]
 }
