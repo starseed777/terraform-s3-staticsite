@@ -1,15 +1,13 @@
 
 resource "aws_s3_bucket" "blog-bucket" {
-  bucket = "blogjawnt"
+  bucket = var.bucketname
   acl    = "public-read"
   policy = file("policy.json")
 
   tags = {
-    Name        = "blogjawnt"
-    Environment = "Dev"
+    Name        = var.tagname 
+    Environment = var.bucketenv
   }
-
-
 
   website {
     index_document = "index.html"
