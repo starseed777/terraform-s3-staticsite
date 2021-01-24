@@ -1,9 +1,9 @@
-# terraformstuff1 
+This repo will contain terraform files that will provision the following:
 
->> Create a terraform project repo - git repo
+>> Creates a terraform project repo - git repo
 
->> Setup a repo to work with AWS
+>> Sets up a repo to work with AWS
 
->> Provision an s3 bucket for internal blog site
+>> Provisions an s3 bucket for internal blog site
 
->> Provision ec2 instances for development
+>> Provisions ec2 instances for development
